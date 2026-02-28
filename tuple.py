@@ -1,0 +1,27 @@
+
+my_tuple = (10, 20, 30, 40, 50)
+print("Original Tuple:", my_tuple)
+print("First element:", my_tuple[0])
+print("Last element:", my_tuple[-1])
+print("Sliced Tuple (1:4):", my_tuple[1:4])
+print("Length of tuple:", len(my_tuple))
+print("Is 30 in tuple?", 30 in my_tuple)
+print("Count of 20:", my_tuple.count(20))
+print("Index of 40:", my_tuple.index(40))
+nested_tuple = ((1, 2), (3, 4), (5, 6))
+print("Nested Tuple:", nested_tuple)
+print("Access nested element:", nested_tuple[1][0])
+packed = 100, 200, 300
+print("Packed Tuple:", packed)
+a, b, c = packed
+print("Unpacked Values:", a, b, c)
+my_list = [7, 8, 9]
+converted_tuple = tuple(my_list)
+print("List to Tuple:", converted_tuple)
+temp_list = list(my_tuple)
+temp_list.append(60)
+new_tuple = tuple(temp_list)
+print("Modified Tuple (after converting):", new_tuple)
+single = (5,)
+print("Single Element Tuple:", single)
+print("\nProgram Completed Successfully!")
