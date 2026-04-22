@@ -1,0 +1,4 @@
+Hello
+Welcome to Python File Handling
+This is an example
+This line is added later

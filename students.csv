@@ -1,3 +1,12 @@
-Name,Marks
-Amit,85
-Riya,90
+import csv
+
+with open("students.csv", "w", newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(["Name", "Marks"])
+    writer.writerow(["Amit", 85])
+    writer.writerow(["Abhijeet", 90])
+
+with open("students.csv", "r") as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print(row)
